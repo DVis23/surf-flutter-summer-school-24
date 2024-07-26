@@ -16,7 +16,7 @@ class GalleryWidget extends ElementaryWidget<GalleryWidgetModel> {
   @override
   Widget build(GalleryWidgetModel wm) {
     return Scaffold(
-      appBar: const GalleryAppbar(),
+      appBar: GalleryAppbar(onTab: wm.pickImage),
       body: ValueListenableBuilder<List<PhotoEntity>>(
         valueListenable: wm.model.images,
         builder: (context, images, child) {
