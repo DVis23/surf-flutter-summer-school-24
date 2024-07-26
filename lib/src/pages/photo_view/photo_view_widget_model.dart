@@ -5,7 +5,7 @@ import 'package:surf_flutter_summer_school_24/src/pages/photo_view/photo_view_wi
 
 
 class PhotoViewWidgetModel extends WidgetModel<PhotoViewWidget, PhotoViewModel> {
-  PhotoViewWidgetModel(PhotoViewModel model) : super(model);
+  PhotoViewWidgetModel(super.model);
 
   @override
   void initWidgetModel() {
@@ -14,7 +14,6 @@ class PhotoViewWidgetModel extends WidgetModel<PhotoViewWidget, PhotoViewModel> 
       model.handlePageViewChanged(model.pageController.page!.toInt());
     });
   }
-
 }
 
 PhotoViewWidgetModel createPhotoViewWidgetModel(BuildContext context) {

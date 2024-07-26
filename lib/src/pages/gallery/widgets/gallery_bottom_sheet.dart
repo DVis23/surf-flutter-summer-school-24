@@ -1,17 +1,10 @@
-import 'dart:convert';
-import 'dart:io';
-
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import '../../../feature/photos/data/photo_repository.dart';
-import '../../../feature/photos/data/upload_image_to_cload.dart';
 import '../../../feature/theme/di/theme_inherited.dart';
 
-import 'package:http/http.dart' as http;
-
 class GalleryBottomSheet extends StatelessWidget {
-  const GalleryBottomSheet({super.key});
+  final Function(ImageSource, BuildContext) onTab;
+  const GalleryBottomSheet({super.key, required this.onTab});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +15,7 @@ class GalleryBottomSheet extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            ElevatedButton(
+            TextButton(
               child:  Row(
                 children: [
                   Padding(
@@ -54,7 +47,7 @@ class GalleryBottomSheet extends StatelessWidget {
                 ThemeInherited.of(context).switchThemeMode();
               },
             ),
-            ElevatedButton(
+            TextButton(
               child: const Padding(
                 padding: EdgeInsets.only(left: 25.0),
                 child: Row(
@@ -75,7 +68,7 @@ class GalleryBottomSheet extends StatelessWidget {
                         children: [
                           TextButton(
                             onPressed: () async {
-                              _pickImage(ImageSource.gallery, context);
+                              onTab(ImageSource.gallery, context);
                             },
                             child: const Row(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -88,7 +81,7 @@ class GalleryBottomSheet extends StatelessWidget {
                           ),
                           TextButton(
                             onPressed: () async {
-                              _pickImage(ImageSource.camera, context);
+                              onTab(ImageSource.camera, context);
                             },
                             child:const Row(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -110,14 +103,5 @@ class GalleryBottomSheet extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-Future<void> _pickImage(ImageSource source, BuildContext context) async {
-  final picker = ImagePicker();
-  final pickedFile = await picker.pickImage(source: source);
-
-  if (pickedFile != null) {
-    await uploadImageToYandexCloud(pickedFile.path);
   }
 }
