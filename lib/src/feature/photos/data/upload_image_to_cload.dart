@@ -5,7 +5,7 @@ import 'package:dio/dio.dart';
 import 'package:http/http.dart' as http;
 
 Future<void> uploadImageToYandexCloud(String imagePath) async {
-  const token = 'y0_AgAAAABZVuavAADLWwAAAAELdHsRAAAWFyiqDOJE_LPjdaheqhXn63NSWA';
+  const token = '';
 
   final uri = Uri.https(
     'cloud-api.yandex.net',
