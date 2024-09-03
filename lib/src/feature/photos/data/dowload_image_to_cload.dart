@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 import '../domain/models/photo_entity.dart';
 
 Future<List<PhotoEntity>> downloadImageFromYandexCloud() async {
-  const token = 'y0_AgAAAABZVuavAADLWwAAAAELdHsRAAAWFyiqDOJE_LPjdaheqhXn63NSWA';
+  const token = '';
 
   final uri = Uri.https(
     'cloud-api.yandex.net',
