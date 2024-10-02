@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../domain/theme_controller.dart';
+import 'package:surf_flutter_summer_school_24/src/feature/theme/domain/theme_controller.dart';
 
 class ThemeInherited extends InheritedWidget {
   const ThemeInherited({

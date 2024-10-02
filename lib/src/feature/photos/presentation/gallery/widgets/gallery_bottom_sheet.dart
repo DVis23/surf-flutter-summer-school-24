@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import '../../../../theme/di/theme_inherited.dart';
+import 'package:surf_flutter_summer_school_24/src/feature/theme/di/theme_inherited.dart';
 
 
 class GalleryBottomSheet extends StatelessWidget {

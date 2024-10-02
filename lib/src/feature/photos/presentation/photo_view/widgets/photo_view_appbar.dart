@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../gallery/gallery_widget.dart';
+import 'package:surf_flutter_summer_school_24/src/feature/photos/presentation/gallery/gallery_widget.dart';
 
 class PhotoViewAppbar extends StatelessWidget implements PreferredSizeWidget {
   final int total;

@@ -1,10 +1,7 @@
 import 'dart:convert';
-
-import '../domain/i_photo_repository.dart';
-import '../domain/models/photo_entity.dart';
-
+import 'package:surf_flutter_summer_school_24/src/feature/photos/domain/i_photo_repository.dart';
+import 'package:surf_flutter_summer_school_24/src/feature/photos/domain/models/photo_entity.dart';
 import 'dart:io';
-
 import 'package:dio/dio.dart';
 import 'package:http/http.dart' as http;
 
