@@ -9,7 +9,7 @@ import 'package:dio/dio.dart';
 import 'package:http/http.dart' as http;
 
 class PhotoRepository implements IPhotoRepository {
-  final token = 'y0_AgAAAABZVuavAADLWwAAAAELdHsRAAAWFyiqDOJE_LPjdaheqhXn63NSWA';
+  final token = '';
 
   @override
   Future<List<PhotoEntity>> getPhotos() async {
