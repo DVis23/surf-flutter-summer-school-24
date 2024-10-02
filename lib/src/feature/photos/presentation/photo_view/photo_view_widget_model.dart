@@ -1,7 +1,7 @@
 import 'package:elementary/elementary.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:surf_flutter_summer_school_24/src/pages/photo_view/photo_view_model.dart';
-import 'package:surf_flutter_summer_school_24/src/pages/photo_view/photo_view_widget.dart';
+import 'package:surf_flutter_summer_school_24/src/feature/photos/presentation/photo_view/photo_view_model.dart';
+import 'package:surf_flutter_summer_school_24/src/feature/photos/presentation/photo_view/photo_view_widget.dart';
 
 
 class PhotoViewWidgetModel extends WidgetModel<PhotoViewWidget, PhotoViewModel> {

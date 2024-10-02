@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import '../../../feature/theme/di/theme_inherited.dart';
+import '../../../../theme/di/theme_inherited.dart';
+
 
 class GalleryBottomSheet extends StatelessWidget {
   final Function(ImageSource, BuildContext) onTab;

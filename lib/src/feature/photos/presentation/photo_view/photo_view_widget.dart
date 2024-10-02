@@ -1,8 +1,8 @@
 import 'package:elementary/elementary.dart';
 import 'package:flutter/material.dart';
-import 'package:surf_flutter_summer_school_24/src/pages/photo_view/photo_view_widget_model.dart';
+import 'package:surf_flutter_summer_school_24/src/feature/photos/presentation/photo_view/photo_view_widget_model.dart';
 
-import '../../feature/photos/domain/models/photo_entity.dart';
+import '../../domain/models/photo_entity.dart';
 import 'widgets/photo_view_appbar.dart';
 import 'widgets/photo_view_container.dart';
 

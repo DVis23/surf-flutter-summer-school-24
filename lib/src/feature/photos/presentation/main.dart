@@ -4,7 +4,7 @@ import 'package:surf_flutter_summer_school_24/src/feature/theme/data/theme_repos
 import 'package:surf_flutter_summer_school_24/src/feature/theme/di/theme_inherited.dart';
 import 'package:surf_flutter_summer_school_24/src/feature/theme/domain/theme_controller.dart';
 import 'package:surf_flutter_summer_school_24/src/feature/theme/ui/theme_builder.dart';
-import 'package:surf_flutter_summer_school_24/src/pages/gallery/gallery_widget.dart';
+import 'package:surf_flutter_summer_school_24/src/feature/photos/presentation/gallery/gallery_widget.dart';
 import 'package:surf_flutter_summer_school_24/src/storage/theme/theme_storage.dart';
 import 'package:surf_flutter_summer_school_24/src/uikit/theme/theme_data.dart';
 

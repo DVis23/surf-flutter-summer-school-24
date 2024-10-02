@@ -1,7 +1,7 @@
 import 'package:elementary/elementary.dart';
 import 'package:flutter/material.dart';
 
-import '../../feature/photos/domain/models/photo_entity.dart';
+import '../../domain/models/photo_entity.dart';
 
 class PhotoViewModel extends ElementaryModel {
   final ValueNotifier<int> _currentPageIndex;

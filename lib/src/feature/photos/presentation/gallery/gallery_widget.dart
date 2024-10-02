@@ -1,7 +1,7 @@
 import 'package:elementary/elementary.dart';
 import 'package:flutter/material.dart';
 
-import '../../feature/photos/domain/models/photo_entity.dart';
+import '../../domain/models/photo_entity.dart';
 import 'widgets/gallery_appbar.dart';
 import 'widgets/photo_gallery_container.dart';
 import 'gallery_widget_model.dart';

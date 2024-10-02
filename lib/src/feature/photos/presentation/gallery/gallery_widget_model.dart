@@ -2,7 +2,7 @@ import 'package:elementary/elementary.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
-import '../../feature/photos/data/photo_repository.dart';
+import '../../data/photo_repository.dart';
 import '../photo_view/photo_view_widget.dart';
 import 'gallery_model.dart';
 import 'gallery_widget.dart';
